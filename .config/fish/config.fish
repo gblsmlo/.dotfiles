@@ -5,3 +5,7 @@ end
 set fish_greeting ""
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+starship init fish | source
+zoxide init --cmd cd fish | source
+

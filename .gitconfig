@@ -1,7 +1,6 @@
 [user]
 	name = Gabriel Melo
 	email = gabriel_smelo@proton.me
-	signingkey = 493BD100F4426BAA
 [alias]
 	ci = commit
 	co = checkout

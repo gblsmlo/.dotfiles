@@ -28,3 +28,15 @@ set -x NVM_DIR ~/.nvm
 function nvm
     bass source /opt/homebrew/opt/nvm/nvm.sh --no-use ';' nvm $argv
 end
+
+# Auto-load nvm default version
+function __nvm_auto_load
+    if test -s "$NVM_DIR/nvm.sh"
+        bass source /opt/homebrew/opt/nvm/nvm.sh --no-use ';' nvm use default
+    end
+end
+
+# Load nvm default version on shell start
+if status is-interactive
+    __nvm_auto_load
+end

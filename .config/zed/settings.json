@@ -1,0 +1,186 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "vertical_scroll_margin": 3.0,
+  "expand_excerpt_lines": 5,
+  "current_line_highlight": "line",
+  "minimap": {
+    "max_width_columns": 100
+  },
+  "modeline_lines": 4,
+  "vim": {
+    "toggle_relative_line_numbers": false
+  },
+  "relative_line_numbers": "disabled",
+  "scrollbar": {
+    "show": "never"
+  },
+  "show_wrap_guides": true,
+  "use_system_window_tabs": true,
+  "ui_font_family": "SF Pro",
+  "git_panel": {
+    "tree_view": true,
+  },
+  "base_keymap": "VSCode",
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "terminal": {
+    "toolbar": {
+      "breadcrumbs": false,
+    },
+  },
+  "debugger": {
+    "save_breakpoints": true,
+  },
+  "toolbar": {
+    "code_actions": false,
+    "quick_actions": false,
+    "breadcrumbs": false,
+  },
+  "gutter": {
+    "min_line_number_digits": 4,
+    "line_numbers": false,
+    "breakpoints": false,
+  },
+  "project_panel": {
+    "dock": "left",
+    "sticky_scroll": false,
+  },
+  "sticky_scroll": {
+    "enabled": false,
+  },
+  "title_bar": {
+    "show_user_menu": true,
+    "show_user_picture": true,
+    "show_menus": true,
+    "show_branch_icon": true,
+  },
+  "preview_tabs": {
+    "enable_preview_from_file_finder": false,
+    "enable_preview_from_project_panel": false,
+    "enabled": false,
+  },
+  "tab_bar": {
+    "show_pinned_tabs_in_separate_row": true,
+    "show_tab_bar_buttons": true,
+    "show_nav_history_buttons": true,
+    "show": false,
+  },
+  "tabs": {
+    "file_icons": false,
+    "git_status": false,
+  },
+  "status_bar": {
+    "experimental.show": true,
+  },
+  "hard_tabs": false,
+  "buffer_font_weight": 500.0,
+  "icon_theme": {
+    "mode": "light",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "buffer_line_height": "comfortable",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "agent": {
+    "tool_permissions": {
+      "tools": {
+        "terminal": {
+          "default": "allow",
+        },
+      },
+    },
+    "default_profile": "write",
+    "favorite_models": [
+      {
+        "provider": "google",
+        "model": "gemini-2.5-flash-lite",
+        "enable_thinking": false,
+      },
+    ],
+    "default_model": {
+      "enable_thinking": true,
+      "provider": "openrouter",
+      "model": "z-ai/glm-5",
+    },
+    "model_parameters": [],
+  },
+  "context_servers": {
+    "mcp-server-supabase": {
+      "enabled": true,
+      "remote": false,
+      "settings": {},
+    },
+  },
+  "tab_size": 2,
+  "ui_font_size": 16,
+  "buffer_font_size": 14.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Min Dark (Solid)"
+  },
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+    "biome": {
+      "binary": {
+        "arguments": ["lsp-proxy"],
+      },
+    },
+    "tailwindcss-language-server": {
+      "settings": {
+        "classFunctions": ["cva", "cx"],
+        "experimental": {
+          "classRegex": ["[cls|className]\\s\\:\\=\\s\"([^\"]*)"],
+        },
+      },
+    },
+  },
+  "languages": {
+    "JavaScript": {
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true,
+      },
+    },
+    "TypeScript": {
+      "show_edit_predictions": true,
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true,
+      },
+    },
+    "TSX": {
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true,
+      },
+    },
+  },
+}

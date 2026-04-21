@@ -1,6 +1,7 @@
 [user]
 	name = Gabriel Melo
-	email = gbsmlo@gmail.com
+	email = gmelo@bondingai.io
+	signingKey = 
 [alias]
 	ci = commit
 	co = checkout
@@ -17,7 +18,23 @@
 	defaultBranch = main
 [commit]
 	signingkey = true
+	gpgSign = false
 [tag]
 	signingkey = true
+	forceSignAnnotated = false
 [core]
 	editor = vim
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[safe]
+	directory = *
+[gpg]
+	format = 
+	program = gpg
+[gpg "ssh"]
+	program = 
+	allowedSignersFile = 

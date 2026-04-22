@@ -7,10 +7,25 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent_buffer_font_size": 14.0,
+  "auto_indent_on_paste": true,
+  "auto_indent": "syntax_aware",
+  "remove_trailing_whitespace_on_save": true,
+  "indent_guides": {
+    "enabled": false,
+    "active_line_width": 1,
+    "line_width": 1
+  },
+  "soft_wrap": "none",
+  "inline_code_actions": true,
+  "text_rendering_mode": "platform_default",
+  "agent_ui_font_size": 16.0,
+  "ui_font_weight": 500.0,
   "vertical_scroll_margin": 3.0,
   "expand_excerpt_lines": 5,
-  "current_line_highlight": "line",
+  "current_line_highlight": "all",
   "minimap": {
+    "current_line_highlight": "none",
     "max_width_columns": 100
   },
   "modeline_lines": 4,
@@ -21,9 +36,9 @@
   "scrollbar": {
     "show": "never"
   },
-  "show_wrap_guides": true,
+  "show_wrap_guides": false,
   "use_system_window_tabs": true,
-  "ui_font_family": "SF Pro",
+  "ui_font_family": ".SystemUIFont",
   "git_panel": {
     "tree_view": true,
   },
@@ -61,7 +76,7 @@
   "title_bar": {
     "show_user_menu": true,
     "show_user_picture": true,
-    "show_menus": true,
+    "show_menus": false,
     "show_branch_icon": true,
   },
   "preview_tabs": {
@@ -122,8 +137,8 @@
     },
   },
   "tab_size": 2,
-  "ui_font_size": 16,
-  "buffer_font_size": 14.0,
+  "ui_font_size": 16.0,
+  "buffer_font_size": 13.0,
   "theme": {
     "mode": "dark",
     "light": "One Light",
